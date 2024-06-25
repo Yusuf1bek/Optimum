@@ -1,0 +1,42 @@
+.site-header {
+    padding: 20px 0;
+    background-color: #0000004D;
+
+}
+.header {
+    @include display($items:center, $space:space-between, $gap:0px)
+}
+.header__logo-link {
+    display: inline-block;
+}
+.navbar{
+    @include display($items:center, $space:none, $gap:50px);
+
+}
+.navbar__list {
+    @include display($items:center, $space:none, $gap:25px);
+}
+.navbar__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: $clr-white;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    
+    &:hover{
+        color: $clr-orange;
+    }
+}
+.navbar__contact-number {
+    @include display($items:center, $space:none, $gap:10px);
+    color: $clr-white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    transition: color 0.3s ease;
+    
+    &:hover{
+        color: $clr-orange;
+    }
+}
