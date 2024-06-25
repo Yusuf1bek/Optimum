@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="icon" href="./images/logo-icon.svg">
+    <link rel="icon" href="./images/icon.svg">
     <title>OPTIMUM</title>
 </head>
 <body>
@@ -13,32 +12,32 @@
     <header class="site-header">
         <div class="container">
             <div class="header">
-                <a class="header__logo-link" href="/">
-                    <img class="header__logo-img" src="./images/header__logo-img.svg" alt="Logo-img" width="245" height="243">
+               <a class="header__logo-link" href="/">
+                <img class="header__logo-img" src="./images/logo-img.png" alt="Logo-Img" width="245" height="43">
+               </a>
+               <nav class="header__navbar navbar">
+                <ul class="navbar__list">
+                    <li class="navabr__item">
+                        <a href="" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navabr__item">
+                        <a href="" class="navbar__link">Services</a>
+                    </li>
+                    <li class="navabr__item">
+                        <a href="" class="navbar__link">About us</a>
+                    </li>
+                    <li class="navabr__item">
+                        <a href="" class="navbar__link">Shiping methods</a>
+                    </li>
+                    <li class="navabr__item">
+                        <a href="" class="navbar__link">FAQ</a>
+                    </li>
+                </ul>
+                <a class="navbar__phone-call" href="tel:2242182949">
+                    <img src="./images/call-phone.svg" alt="Phone-Icon" width="38" height="38">
+                    <span>224-218-2949</span>
                 </a>
-                <nav class="header__navbar navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Services</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">About us</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Shipping Methods</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">FAQ</a>
-                        </li>
-                    </ul>
-                    <a class="navbar__contact-number" href="tel:2242182949">
-                        <img src="./images/call-phone.svg" alt="Call-Phone-Icon" width="38" height="38">
-                        <span>224-218-2949</span>
-                    </a>
-                </nav>
+               </nav>
             </div>
         </div>
     </header>
@@ -48,7 +47,25 @@
         <section class="hero-section">
             <diV class="container">
                 <div class="hero">
-                    <form class="hero__form"></form>
+                    <form class="hero__form form">
+                        <strong class="form__subcontent-tittle">Shipping Cost Calculator</strong>
+                        <p class="form__tetx">Get your estimate quote in seconds</p>
+                        <label class="form__label">
+                            <span class="form__content">From </span>
+                            <input class="form__input" name="zip_code" type="text" placeholder="Select ZIP code or location ">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__content">To</span>
+                            <input class="form__input" name="zip_code" type="text" placeholder="Select ZIP code or location ">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__content">Estimate time </span>
+                            <input class="form__input" name="zip_code" type="date" placeholder="Select estimate time">
+                        </label>
+                        <label class="form__radio-label">
+                            <input type="checkbox">
+                        </label>
+                    </form>
                     <div class="hero__content-wrapper">
                         <p class="hero__text">World Top Rated Shipping Company</p>
                         <h2 class="hero__tittle">Transportation Services that you can trust</h2>
@@ -56,8 +73,7 @@
                     </div>
                 </div>
             </diV>
-        </section>
-                        
+        </section> 
         <!-- Hero section  -->
     </main>
     <!-- Site Footer  -->

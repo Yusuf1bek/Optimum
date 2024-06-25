@@ -1,10 +1,12 @@
 .site-header {
     padding: 20px 0;
     background-color: #0000004D;
-
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
 }
 .header {
-    @include display($items:center, $space:space-between, $gap:0px)
+    @include display($items:center, $space:space-between, $gap:0px);
 }
 .header__logo-link {
     display: inline-block;
@@ -28,7 +30,7 @@
         color: $clr-orange;
     }
 }
-.navbar__contact-number {
+.navbar__phone-call {
     @include display($items:center, $space:none, $gap:10px);
     color: $clr-white;
     font-size: 16px;
