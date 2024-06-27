@@ -1,0 +1,52 @@
+.pro-section {
+    margin-bottom: 212px;
+    padding: 75px 0;
+    background-image: url("../../images/pro-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.pro {
+    @include display($items:center, $space:space-between, $gap:0px);
+
+}
+.pro__content-wrapper {
+    width: 266px;
+}
+.pro__content-wrapper > h2{
+    @include textStyle($FS:38px, $FW:600, $LH:40px, $CLR:white, $CASE:capitalize, $MB:20px);
+
+}
+.pro__content-wrapper > p{
+    @include textStyle($FS:16px, $FW:400, $LH:19px, $CLR:white, $CASE:capitalize, $MB:20px);
+
+}
+.pro__list {
+    @include display($items:start, $space:start, $gap:50px);
+
+}
+.count > strong {
+    @include textStyle($FS:50px, $FW:600, $LH:60px, $CLR:white, $CASE:capitalize, $MB:8px);
+
+}
+.count > p{
+    @include textStyle($FS:16px, $FW:500, $LH:19px, $CLR:white, $CASE:capitalize, $MB:0px);
+
+}
+.count__img-wrapper {
+    margin-bottom: 10px;
+    width: 48px;
+    height: 48px;
+    @include display($items:center, $space:center, $gap:0px);
+
+}
+
+.pro__wrapper {
+}
+.pro__content-wrapper {
+
+}
+.inner {
+}
+.pro__img {
+}

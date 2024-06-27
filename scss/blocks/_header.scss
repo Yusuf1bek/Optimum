@@ -4,6 +4,7 @@
     position: fixed;
     backdrop-filter: blur(10px);
     width: 100%;
+    z-index: 50;
 }
 .header {
     @include display($items:center, $space:space-between, $gap:0px);

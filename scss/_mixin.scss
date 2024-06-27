@@ -9,6 +9,14 @@
     font-weight: $FW;
     line-height: $LH;
     color: $CLR;
-    text-transform: $CASE;
+    text-transform: $CASE; 
     margin-bottom: $MB;
+}
+@mixin btnStyle($width:400px, $padding, $BtnFS, $BtnFW, $BtnLH, $BtnColor, $BtnCase, $BtnBG:$BtnBG){
+    width: $width;
+    padding: $padding 0;
+    text-align: center;
+    border-radius: 8px;
+    background-color: $BtnBG;
+    @include textStyle($FS:$BtnFS, $FW:$BtnFW, $LH:$BtnLH, $CLR:$BtnColor, $CASE:$BtnCase, $MB:0px);
 }

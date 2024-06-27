@@ -1,5 +1,4 @@
 .hero-section {
-    height: 100vh;
     padding: 180px 0 93px;
     background-image: url("../../images/bg-hero.png");
     background-repeat: no-repeat;
@@ -24,6 +23,7 @@
 .form__tetx {
     @include textStyle($FS:16px, $FW:400, $LH:19px, $CLR:white, $CASE:capitalize, $MB:0px);
     border-bottom: 1px solid  white;
+    margin-bottom: 25px;
     padding-bottom: 20px;
 }
 .form__label {
@@ -50,6 +50,32 @@
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 14px center;
+}
+.form__radio-wrapper{
+    @include display($items:center, $space:space-between, $gap:0px);
+
+    
+}
+.form__radio-label {
+    @include display($items:center, $space:start, $gap:12px);
+    width: 49%;
+    padding: 15px;
+    background-color: $clr-white;
+    border-radius: 12px;
+}
+.form__type-wrapper{
+    border-bottom: 1px solid  white;
+    padding-bottom: 25px;
+}
+.form__custum-radio {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #D3D3D3;
+
+}
+.radio__input:checked ~ .form__custum-radio{
+    color: $clr-orange;
 }
 .hero__content-wrapper {
     width: 576px;
@@ -80,4 +106,17 @@
 .hero__bottome-text {
     @include textStyle($FS:20px, $FW:400, $LH:24px, $CLR:white, $CASE:capitalize, $MB:0px);
 
+}
+
+.form__btn{
+    margin-top: 20px;
+    @include btnStyle($width:100%, $padding:17px, $BtnFS:17p, $BtnFW:500, $BtnLH:20px, $BtnColor:white, $BtnCase:capitalize, $BtnBG:$clr-orange);
+    border: 1px solid $clr-orange;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease ;
+}
+.form__btn:hover{
+    background-color: $clr-white;
+    color: $clr-orange;
 }

@@ -60,11 +60,24 @@
                         </label>
                         <label class="form__label">
                             <span class="form__content">Estimate time </span>
-                            <input class="form__input" name="zip_code" type="date" placeholder="Select estimate time">
+                            <input class="form__input" name="zip_code" type="text" placeholder="Select estimate time">
                         </label>
-                        <label class="form__radio-label">
-                            <input type="checkbox">
-                        </label>
+                        <div class="form__type-wrapper">
+                            <span class="form__content">Transport type</span>
+                            <div class="form__radio-wrapper">
+                                <label class="form__radio-label">
+                                    <input class="visually-hidden radio-input" name="type" type="radio">
+                                    <div class="form__custum-radio"></div>
+                                    <span>Open</span>
+                                </label>
+                                <label class="form__radio-label radio-input">
+                                    <input class="visually-hidden" name="type" type="radio">
+                                    <div class="form__custum-radio"></div>
+                                    <span>Encolsed</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="form__btn" type="submit">Get Shipment estimate</button>
                     </form>
                     <div class="hero__content-wrapper">
                         <p class="hero__text">World Top Rated Shipping Company</p>
@@ -74,6 +87,130 @@
                 </div>
             </diV>
         </section> 
+        <section class="services-section">
+            <div class="container services">
+                    <div class="services__content-wrapper">
+                        <h2> Our services</h2>
+                        <p>Optimum Auto Shipping is specialized in shipping different type of ...</p>
+                    </div>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <img class="services__img" src="./images/car.avif" alt="Car-img" width="100%" height="100%">
+                            <div class="services-sebcontent">
+                                <h3>Car Shipments</h3>
+                                <p>Read more</p>
+                            </div>
+                            <div class="services__hidden-content">
+                                <h3>Car Shipments</h3>
+                                <p>One of the most widely-known segment of the freight industry is Auto Transport. It offers car shipping services to individuals and organizations who require a car to be transferred from one place to another.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__img" src="./images/car2.avif" alt="Car-img" width="100%" height="100%">
+                            <div class="services-sebcontent">
+                                <h3>Motorcycle shipments</h3>
+                                <p>Read more</p>
+                            </div>
+                            <div class="services__hidden-content">
+                                <h3>Motorcycle shipments</h3>
+                                <p>Motorcycle shipments are as popular as regular vehicles. People might need motorcycle shipments due to some reasons like moving to another state, buying or selling purposes, and the most popular one “Vintage motorcycle shows”.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__img" src="./images/car3.avif" alt="Car-img" width="100%" height="100%">
+                            <div class="services-sebcontent">
+                                <h3>Heavy Equipment</h3>
+                                <p>Read more</p>
+                            </div>
+                            <div class="services__hidden-content">
+                                <h3>Heavy Equipment</h3>
+                                <p>Shipping Heavy equipment is not always an easy process to do. Heavy machinery plays an important role in your business. So that’s why you will need a professional heavy equipment transporter to ship your machinery.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__img" src="./images/car4.avif" alt="Car-img" width="100%" height="100%">
+                            <div class="services-sebcontent">
+                                <h3>HI / AK Shipments</h3>
+                                <p>Read more</p>
+                            </div>
+                            <div class="services__hidden-content">
+                                <h3>HI / AK Shipments</h3>
+                                <p>Therefore, it is obvious that you should bring a car with you on your trip to Hawaii. Unavoidably, you may rent a car, use ride-sharing services, or take the dreaded public transportation.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__img" src="./images/car5.avif" alt="Car-img" width="100%" height="100%">
+                            <div class="services-sebcontent">
+                                <h3>Boat Shipments</h3>
+                                <p>Read more</p>
+                            </div>
+                            <div class="services__hidden-content">
+                                <h3>Boat Shipments</h3>
+                                <p>OYou might have purchased a boat after making the trip to a far-off boat show, read about a great offer on a far-off yacht, or purchased a boat directly from the manufacturer. </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__img" src="./images/car6.avif" alt="Car-img" width="100%" height="100%">
+                            <div class="services-sebcontent">
+                                <h3>Door to Door delivery</h3>
+                                <p>Read more</p>
+                            </div>
+                            <div class="services__hidden-content">
+                                <h3>Door to Door delivery</h3>
+                                <p>Optimum Auto Shipping offers Door to Door delivery to all the services we offer to our valuable customers. Regular cars and even Heavy equipment shipping will be delivery to your front door.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="pro-section">
+            <div class="container">
+                <div class="pro">
+                    <div class="pro__content-wrapper">
+                        <h2>We’re PROs at what we DO</h2>
+                        <p>Hire professional carriers for your shipments needs</p>
+                    </div>
+                    <ul class="pro__list">
+                        <li class="pro__item count">
+                            <div class="count__img-wrapper">
+                                <img src="./images/avatar.svg" alt="Avatar-Img" width="30" height="30">
+                            </div>
+                            <strong><span class="count-first">10</span>K</strong>
+                            <p>Client Served</p>
+                        </li>
+                        <li class="pro__item count">
+                            <div class="count__img-wrapper">
+                                <img src="./images/avatar.svg" alt="Avatar-Img" width="30" height="30">
+                            </div>
+                            <strong><span class="count-third">23</span>K</strong>
+                            <p>Vehicle shipped</p>
+                        </li>
+                        <li class="pro__item count">
+                            <div class="count__img-wrapper">
+                                <img src="./images/avatar.svg" alt="Avatar-Img" width="30" height="30">
+                            </div>
+                            <strong> <span class="count-second"> 96</span>%</strong>
+                            <p>Satisfied customer</p>
+                        </li>
+                        <li class="pro__item count">
+                            <div class="count__img-wrapper">
+                                <img src="./images/avatar.svg" alt="Avatar-Img" width="30" height="30">
+                            </div>
+                            <strong><span class="count-four">7</span>+</strong>
+                            <p>Years in operation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!-- Hero section  -->
     </main>
     <!-- Site Footer  -->
@@ -83,5 +220,6 @@
         </div>
     </footer>
     <!-- Site Footer  -->
+     <script src="./js/main.js"></script>
 </body>
 </html
